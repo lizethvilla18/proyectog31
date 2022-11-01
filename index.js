@@ -9,7 +9,7 @@ app.use(Express.json())
 //app.use(´/usarios'.blogRoutes)
 
 app.get('/',(req,res)=>{
-    res.send('Hola Mundo')
+    res.send('Hola Mundo G31!')
 })
 
 app.listen(8000,()=>{
