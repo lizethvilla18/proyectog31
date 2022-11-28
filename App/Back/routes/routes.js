@@ -1,6 +1,8 @@
 import express from 'express';
 import { regusuario, showuser, shuserone, deluser, upuser  } from '../controllers/userscontroller.js';
 import { regevento, shevento, shonevent, delevento, upevento } from '../controllers/eventcontrollers.js';
+import {login, loginjwt} from '../controllers/logincontrollers.js';
+import {requireToken} from '../Midlewares/auth.js'
 import {db} from '../mongodb.js';
 
 export const router = express.Router();
